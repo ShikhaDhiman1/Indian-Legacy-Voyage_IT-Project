@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detailed Information</title>
+    <link rel="stylesheet" href="/public/more.css" />
+    <!-- Link to font-awsome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="body-cover" class="body-div">
+      <div class="navbar">
+        <div class="logo-bg"></div>
+        <a href="/"
+          ><img src="/public/logo.png" alt="image..."
+        /></a>
+        <h1>Indian Legacy Voyage</h1>
+        <h4>(Inida's <i>Culture and Heritage</i> Timeline)</h4>
+        <div id="user_home">
+          <a class="login" id="login_user" href="#">Login/Sign Up</a>
+        </div>
+      </div>
+
+      <div id="profile-dropdown">
+        <a onclick="toggleProfile()" id="profile" href="#">Profile</a>
+        <a id="logOut" href="#">Log out</a>
+      </div>
+
+      <div class="container">
+        <div class="div-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d186184.92177880395!2d77.22699708452369!3d28.659424157075215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1715489557995!5m2!1sen!2sin"
+            width="1200"
+            height="460"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="div-form" id="form-div">
+      <center><h3 class="form-heading">SIGN UP</h3></center>
+      <!-- <hr> -->
+      <form action="#" onsubmit="formAction()">
+        <label for="Fname">First Name:<span class="sup"> *</span></label>
+        <input
+          type="text"
+          name="fname"
+          id="Fname"
+          required
+          placeholder="Your first name"
+        /><br />
+        <label for="Lname">Last Name:</label>
+        <input
+          type="text"
+          name="lname"
+          id="Lname"
+          placeholder="Your last name"
+        /><br />
+        <label for="email">E-mail Id:<span class="sup"> *</span></label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          placeholder="E-mail"
+        /><br />
+        <label for="passw">Password:<span class="sup"> *</span></label>
+        <input
+          type="password"
+          name="password"
+          id="passw"
+          required
+          placeholder="password"
+        /><br />
+        <label for="confirmPassword"
+          >Confirm Password:<span class="sup"> *</span></label
+        >
+        <input
+          type="password"
+          name="confpass"
+          id="confirmPassword"
+          required
+          placeholder="password"
+          onkeyup="validate_password()"
+        /><br />
+        <span id="wrong_pass_alert"></span>
+        <button id="formSubmitSignup">SUBMIT</button>
+        <hr />
+        <p class="sign-up">
+          Already a have an account?
+          <a onclick="clickSignIn()" id="link-login" href="#">SIGN IN</a>
+        </p>
+      </form>
+    </div>
+    <script src="/public/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inidian Culture Voyage</title>
+    <link rel="stylesheet" href="/public/more.css" />
+    <link rel="stylesheet" href="/public/style.css" />
+    <!-- Links to font-awsome for icons: -->
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo-bg"></div>
+      <a href="/"><img src="/public/logo.png" alt="image..." /></a>
+      <h1>Indian Legacy Voyage</h1>
+      <h4>(India's <i>Culture and Heritage</i> Timeline)</h4>
+      <div id="user_home">
+        <a onclick="clickUserLogin()" id="user_login" class="login" href="#"
+          >Login/ Sign Up</a
+        >
+      </div>
+    </div>
+
+    <div id="profile-dropdown">
+      <a onclick="toggleProfile()" id="profile" href="#">Profile</a>
+      <a id="logOut" href="#">Log out</a>
+      <!--  onclick = "clickLogout()" -->
+    </div>
+
+    <div class="div-social">
+      <a href=""><i class="fa fa-instagram"></i></a>
+      <a href=""><i class="fa fa-twitter"></i></a>
+      <a href=""><i class="fa fa-facebook"></i></a>
+      <a href=""><i class="fa fa-linkedin-square"></i></a>
+    </div>
+
+    <div id="container" class="container">
+      <ul class="timeline">
+        <li class="timeline">
+          <div class="icon done"></div>
+          <details class="panel">
+            <summary>Indus Valley Civilization</summary>
+            <p>
+              <strong>Time Period:</strong> 2600 BCE - 1900 BCE<br /><br />
+              <strong>Detail:</strong> Located in present-day Pakistan and
+              northwest India, the Indus Valley Civilization was one of the
+              world's earliest urban civilizations. Major sites include:
+              Mohenjo-Daro, ...
+            </p>
+            <div class="links">
+              <span class="get-map"
+                ><a href="/more" >Show in Maps</a></span
+              >
+              <span class="read-more"
+                ><a href="#" onclick="showMore()">Read More</a></span
+              >
+            </div>
+          </details>
+        </li>
+
+        <li class="timeline">
+          <div class="icon done"></div>
+          <details class="panel">
+            <summary>Ajanta and Ellora Caves</summary>
+            <p>
+              <strong>Time Period:</strong> 2nd century BCE - 10th century CE<br /><br />
+              <strong>Detail:</strong> Located in Maharashtra, these caves
+              represent some of the best examples of ancient Indian architecture
+              and art. Ajanta Cave is known for its Buddhist rock-cut cave
+              temples and monasteries with ...
+            </p>
+            <div class="links">
+              <span class="get-map"
+                ><a href="/more" >Show in Maps</a></span
+              >
+              <span class="read-more"
+                ><a href="#" onclick="showMore()">Read More</a></span
+              >
+            </div>
+          </details>
+        </li>
+
+        <li class="timeline">
+          <div class="icon done"></div>
+          <details class="panel">
+            <summary>Vedic Period</summary>
+            <p>
+              <strong>Time Period:</strong> 1500 BCE - 500 BCE<br /><br />
+              <strong>Detail:</strong> The Vedic Period is named after the
+              Vedas, the oldest sacred texts of Hinduism. It is characterized by
+              the Indo-Aryan migration into the Indian subcontinent and the
+              development of the early Vedic literature, which includes ...
+            </p>
+            <div class="links">
+              <span class="get-map"
+                ><a href="/more" >Show in Maps</a></span
+              >
+              <span class="read-more"
+                ><a href="#" onclick="showMore()">Read More</a></span
+              >
+            </div>
+          </details>
+        </li>
+
+        <li class="timeline">
+          <div class="icon done"></div>
+          <details class="panel">
+            <summary>Maurya Empire</summary>
+            <p>
+              <strong>Time Period:</strong> 322 BCE - 185 BCE<br /><br />
+              <strong>Detail:</strong> The Maurya Empire, under the reign of
+              Chandragupta Maurya and his successors, was one of the largest and
+              most powerful empires in ancient India. It was known for its
+              efficient administrative system, centralized governance, and ...
+            </p>
+            <div class="links">
+              <span class="get-map"
+                ><a href="/more" >Show in Maps</a></span
+              >
+              <span class="read-more"
+                ><a href="#" onclick="showMore()">Read More</a></span
+              >
+            </div>
+          </details>
+        </li>
+
+        <li class="timeline">
+          <div class="icon done"></div>
+          <details class="panel">
+            <summary>Bhakti Movement</summary>
+            <p>
+              <strong>Time Period:</strong> 8th century CE - 17th century CE<br /><br />
+              <strong>Detail:</strong> The Bhakti movement was a cultural and
+              religious movement that emphasized personal devotion to a god. It
+              played a significant role in the development of Hinduism and
+              influenced other Indian religions, including Sikhism. Prominent
+              Bhakti saints include ...
+            </p>
+            <div class="links">
+              <span class="get-map"
+                ><a href="/more" >Show in Maps</a></span
+              >
+              <span class="read-more"
+                ><a href="#" onclick="showMore()">Read More</a></span
+              >
+            </div>
+          </details>
+        </li>
+
+        <li class="timeline">
+          <div class="icon done"></div>
+          <details class="panel">
+            <summary>Mughal Empire</summary>
+            <p>
+              <strong>Time Period:</strong> 1526 CE - 1857 CE<br /><br />
+              <strong>Detail:</strong> The Mughal period saw the flourishing of
+              art, architecture, and culture, blending Persian, Turkish, and
+              Indian influences. The Mughals were great patrons of art and
+              architecture, with notable contributions such as the Taj Mahal,
+              Red Fort, and Humayun's Tomb. Akbar's reign is known for ...
+            </p>
+            <div class="links">
+              <span class="get-map"
+                ><a href="/more" >Show in Maps</a></span
+              >
+              <span class="read-more"
+                ><a href="#" onclick="showMore()">Read More</a></span
+              >
+            </div>
+          </details>
+        </li>
+
+        <li class="timeline">
+          <div class="icon done"></div>
+          <details class="panel">
+            <summary>Colonial Period</summary>
+            <p>
+              <strong>Time Period:</strong> 1526 CE - 1857 CE<br /><br />
+              <strong>Detail:</strong> British colonial rule had a significant
+              impact on Indian culture, introducing Western education,
+              bureaucracy, and modern technologies. Indian Renaissance emerged,
+              leading to reforms in social, cultural, and religious spheres.
+              Indian nationalist movements emerged, advocating for ...
+            </p>
+            <div class="links">
+              <span class="get-map"
+                ><a href="/more" >Show in Maps</a></span
+              >
+              <span class="read-more"
+                ><a href="#" onclick="showMore()">Read More</a></span
+              >
+            </div>
+          </details>
+        </li>
+      </ul>
+    </div>
+    <div class="div-form home" id="form-div" style="display: none">
+      <i onclick="clickClose()" class="fa fa-times-circle-o"></i>
+      <center><h3 class="form-heading">SIGN UP</h3></center>
+      <!-- <hr> -->
+      <form action="#" onsubmit="formActionHome()">
+        <label for="Fname">First Name:<span class="sup"> *</span></label>
+        <input
+          type="text"
+          name="fname"
+          id="Fname"
+          required
+          placeholder="Your first name"
+        /><br />
+        <label for="Lname">Last Name:</label>
+        <input
+          type="text"
+          name="lname"
+          id="Lname"
+          placeholder="Your last name"
+        /><br />
+        <label for="email">E-mail Id:<span class="sup"> *</span></label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          placeholder="E-mail"
+        /><br />
+        <label for="passw">Password:<span class="sup"> *</span></label>
+        <input
+          type="password"
+          name="password"
+          id="passw"
+          required
+          placeholder="password"
+        /><br />
+        <label for="confirmPassword"
+          >Confirm Password:<span class="sup"> *</span></label
+        >
+        <input
+          type="password"
+          name="confpass"
+          id="confirmPassword"
+          required
+          placeholder="password"
+          onkeyup="validate_password()"
+        /><br />
+        <span id="wrong_pass_alert"></span>
+        <button id="formSubmitSignup">SUBMIT</button>
+        <hr />
+        <p class="sign-up">
+          Already a have an account?
+          <a onclick="clickSignInHome()" id="link-login" href="#">SIGN IN</a>
+        </p>
+      </form>
+    </div>
+    <script src="/public/script.js"></script>
+  </body>
+</html>

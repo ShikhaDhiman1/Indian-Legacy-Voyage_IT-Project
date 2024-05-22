@@ -189,31 +189,23 @@ function showMore() {
     "container"
   ).innerHTML = `<div class="container-details" id="more-details">
   <div class="heading">
-    <h2>Heading of Event</h2>
-  </div>
+    <!--<h2>Heading of Event</h2>-->
+   </div>
   <ul>
     <li>
       <h3>Time Period:</h3>
-      <span>1745-1823</span>
+      <span>2600 BCE - 1900 BCE</span>
     </li>
     <li>
       <h3>Location:</h3>
       <span
-        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, sed
+        >Present-day Pakistan (Indus Valley region)
       </span>
     </li>
     <li>
       <h3>Information:</h3>
       <span
-        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, sed
-        laudantium, placeat veniam incidunt praesentium aut sequi officiis
-        quod perspiciatis eos odio quas! Error debitis corrupti, iusto
-        recusandae vitae ipsum!
-        <br />
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-        repudiandae suscipit aut sint, unde earum blanditiis saepe,
-        repellendus fugit optio iure assumenda fuga expedita, at animi nihil
-        consequuntur ea odit.</span
+        >The Indus Valley Civilization, also known as the Harappan Civilization, was one of the world's earliest urban civilizations. It flourished in the basins of the Indus River and the Ghaggar-Hakra River in present-day Pakistan and northwest India. The civilization is known for its advanced urban planning, sophisticated drainage systems, and impressive craftsmanship.</span
       >
     </li>
   </ul>
@@ -302,7 +294,9 @@ document.getElementById("logOut").addEventListener("click", async function () {
   console.log("Logout");
   localStorage.removeItem("Email");
   localStorage.removeItem("Name");
-  document.getElementById("user_home").innerHTML = `<a onclick="clickUserLogin()" id="user_login" class="login" href="#"
+  document.getElementById(
+    "user_home"
+  ).innerHTML = `<a onclick="clickUserLogin()" id="user_login" class="login" href="#"
   >Login/ Sign Up</a
 >`;
   document.getElementById("profile-dropdown").style.display = "none";

@@ -16,9 +16,7 @@
     <div id="body-cover" class="body-div">
       <div class="navbar">
         <div class="logo-bg"></div>
-        <a href="/"
-          ><img src="/public/logo.png" alt="image..."
-        /></a>
+        <a href="/"><img src="/public/logo.png" alt="image..." /></a>
         <h1>Indian Legacy Voyage</h1>
         <h4>(Inida's <i>Culture and Heritage</i> Timeline)</h4>
         <div id="user_home">
@@ -46,25 +44,9 @@
       </div>
     </div>
 
-    <div class="div-form" id="form-div">
-      <center><h3 class="form-heading">SIGN UP</h3></center>
-      <!-- <hr> -->
+    <div class="div-form more" id="form-div">
+      <center><h3 class="form-heading">LOGIN</h3></center>
       <form action="#" onsubmit="formAction()">
-        <label for="Fname">First Name:<span class="sup"> *</span></label>
-        <input
-          type="text"
-          name="fname"
-          id="Fname"
-          required
-          placeholder="Your first name"
-        /><br />
-        <label for="Lname">Last Name:</label>
-        <input
-          type="text"
-          name="lname"
-          id="Lname"
-          placeholder="Your last name"
-        /><br />
         <label for="email">E-mail Id:<span class="sup"> *</span></label>
         <input
           type="email"
@@ -81,26 +63,15 @@
           required
           placeholder="password"
         /><br />
-        <label for="confirmPassword"
-          >Confirm Password:<span class="sup"> *</span></label
-        >
-        <input
-          type="password"
-          name="confpass"
-          id="confirmPassword"
-          required
-          placeholder="password"
-          onkeyup="validate_password()"
-        /><br />
-        <span id="wrong_pass_alert"></span>
-        <button id="formSubmitSignup">SUBMIT</button>
+        <button id="formSubmitLogin">SUBMIT</button>
         <hr />
         <p class="sign-up">
-          Already a have an account?
-          <a onclick="clickSignIn()" id="link-login" href="#">SIGN IN</a>
+          Do not have an account?
+          <a onclick="clickSignUp()" id="link-register" href="#">SIGN UP</a>
         </p>
       </form>
     </div>
     <script src="/public/script.js"></script>
+    <script src="/public/more.js"></script>
   </body>
 </html>

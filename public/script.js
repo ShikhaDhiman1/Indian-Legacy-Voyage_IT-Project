@@ -1,4 +1,9 @@
 const divForm = document.getElementById("form-div");
+const name = localStorage.getItem("Name");
+if(name){
+  document.getElementById("user_home").innerHTML =
+        "<a onclick = 'toggleDropdown()' id = 'login_user' class = 'login' href='#'><i style='font-size:20px;' class='fa fa-user-circle-o'></i></a>";
+}
 
 function validate_password() {
   var passw = document.getElementById("passw").value;
@@ -8,15 +13,15 @@ function validate_password() {
     document.getElementById("wrong_pass_alert").style.color = "red";
     document.getElementById("wrong_pass_alert").innerHTML =
       "Use correct password!";
-    document.getElementById("formSubmit").disabled = true;
-    document.getElementById("formSubmit").style.opacity = 0.4;
-    document.getElementById("formSubmit").style.cursor = "not-allowed";
+    document.getElementById("formSubmitSignup").disabled = true;
+    document.getElementById("formSubmitSignup").style.opacity = 0.4;
+    document.getElementById("formSubmitSignup").style.cursor = "not-allowed";
   } else {
     document.getElementById("wrong_pass_alert").style.color = "green";
     document.getElementById("wrong_pass_alert").innerHTML = "Correct password!";
-    document.getElementById("formSubmit").disabled = false;
-    document.getElementById("formSubmit").style.opacity = 1;
-    document.getElementById("formSubmit").style.cursor = "pointer";
+    document.getElementById("formSubmitSignup").disabled = false;
+    document.getElementById("formSubmitSignup").style.opacity = 1;
+    document.getElementById("formSubmitSignup").style.cursor = "pointer";
   }
 }
 
@@ -138,6 +143,7 @@ function clickSignInHome() {
       let response = await postData("/login", data);
       if (response.message === "Login successful") {
         alert(response.message);
+        document.getElementsByClassName("div-form")[0].style.display = "none";
         localStorage.setItem("Email", email);
         localStorage.setItem("Name", response.fname + " " + response.lname);
 
@@ -282,6 +288,7 @@ document
     let response = await postData("/signup", data);
     if (response.message === "Signup successful") {
       alert(response.message);
+      clickSignInHome();
     } else {
       alert("Sign up failed. Please try again.", response.message);
     }
@@ -289,8 +296,8 @@ document
 
 // LOGOUT
 
-document.getElementById("logOut").addEventListener("click", async function () {
-  let response = await postData("/logout");
+document.getElementById("logOut").addEventListener("click", function () {
+  // let response = await postData("/logout");
   console.log("Logout");
   localStorage.removeItem("Email");
   localStorage.removeItem("Name");
